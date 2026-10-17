@@ -6,21 +6,16 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
 add_executable(study_smart_ai
-    src/main.cpp
-    src/Scenario.cpp
-    src/PredictStrategy.cpp
-    src/SortingModule.cpp
-    src/GreedyModule.cpp
-    src/DPModule.cpp
+    main.cpp
+    Scenario.cpp
+    PredictStrategy.cpp
+    SortingModule.cpp
+    GreedyModule.cpp
+    DPModule.cpp
 )
-
-target_include_directories(study_smart_ai PRIVATE src)
 
 add_executable(dp_demo
-    src/DPOnlyMain.cpp
-    src/Scenario.cpp
-    src/DPModule.cpp
+    DPOnlyMain.cpp
+    Scenario.cpp
+    DPModule.cpp
 )
-
-target_include_directories(dp_demo PRIVATE src)
-
